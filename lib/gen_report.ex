@@ -1,4 +1,8 @@
 defmodule GenReport do
+  @moduledoc """
+    This module provides a function to generate a report of worked hours per person, per month and per year
+    in a company
+  """
   alias GenReport.Parser
 
   @people [

@@ -1,4 +1,15 @@
 defmodule GenReport.Parser do
+  @moduledoc """
+    Provides a function to parse CSV report files
+  """
+  @doc """
+    Parses CSV report files
+    ## Parameters
+    - filename: The CSV report file name:\n
+    ## Examples
+        iex> GenReport.Parser.parse_file("gen_report.csv")
+        [[...], [...], [...], ...]
+  """
   def parse_file(filename) do
     "reports/#{filename}"
     |> File.stream!()
